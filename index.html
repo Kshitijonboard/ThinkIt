@@ -82,7 +82,7 @@
 
     <script>
         const correctNumber = Math.floor(Math.random() * 500) + 1;
-        let chancesLeft = 500;
+        let chancesLeft = 20;
 
         function checkGuess() {
             const userGuess = parseInt(document.getElementById('guessInput').value);
@@ -102,7 +102,7 @@
 
         function displayResult(isCorrect) {
             const resultElement = document.getElementById('result');
-            resultElement.textContent = isCorrect ? `Correct choice! You guessed the number in ${500 - chancesLeft} attempts.` : 'Incorrect choice. Try again!';
+            resultElement.textContent = isCorrect ? `Correct choice! You guessed the number in ${20- chancesLeft} attempts.` : 'Incorrect choice. Try again!';
         }
 
         function displayHint(userGuess) {
